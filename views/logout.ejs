@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">         
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-image: url(/images/books1.jpg);
+        }
+        .container{
+            border: 1px solid rgb(200, 214, 241);
+            border-radius: 5px;
+            justify-content: center;
+            display: block;
+            border-radius: 8px;
+            padding:30px;
+            background-color:  rgb(200, 214, 241);
+            width: 500px;
+            height: 300px;
+            padding-left: auto;
+            padding-right: auto;
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            display: block;
+            border-radius: 8px;
+            padding:25px;
+            background-color: rgba(100, 152, 161, 0.3);
+            width: 450px;
+            height: 200px;
+            font-family: Consolas;
+            font-size: 16px;   
+        }
+        h1{
+            text-align: left;
+            color: rgb(243, 243, 16);
+            font-family: Kristen ITC;
+            font-size: 52px;
+           
+        }
+            
+    </style>
+</head>
+<body>
+    <h1>logout</h1>
+    <div class = "container">
+        <div id ="main">
+
+            <form action="/logout" method="POST">
+                <a href="/">home</a> |
+                <button>Logout</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

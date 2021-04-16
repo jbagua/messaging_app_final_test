@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(/images/books1.jpg);
+        }
+        h1{
+            text-align: left;
+            color: rgb(243, 243, 16);
+            font-family: Kristen ITC;
+            font-size: 52px;
+           
+        }
+
+        .container{
+            border: 1px solid rgb(200, 214, 241);
+            border-radius: 5px;
+            justify-content: center;
+            display: block;
+            border-radius: 8px;
+            padding:30px;
+            background-color:  rgb(200, 214, 241);
+            width: 500px;
+            height: 480px;
+            padding-left: auto;
+            padding-right: auto;
+            
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            display: block;
+            border-radius: 8px;
+            padding:25px;
+            background-color: rgba(100, 152, 161, 0.3);
+            width: 450px;
+            height: 200px;
+            font-family: Consolas;
+            font-size: 16px;
+            
+        }
+        #welcome{
+            text-align: center;
+            font-family: Freestyle Script;
+            font-size: 25px;
+            color: rgb(3, 3, 3);
+    
+}
+    </style>
+</head>
+<body>
+
+    <h1>Login here!</h1>
+    <div class = "container">
+        <div id ="welcome">
+        <h2>Enter credentials to log in</h2>
+        </div>
+   
+            <div id = "main">
+                    <form action="/login" method="POST">
+                        username: <input type="text" name="username"required placeholder="enter username"><br>
+                        password: <input type="text" name="password" required placeholder="enter password"><br>
+                        <button>click to login</button>
+                    </form>
+            </div>
+    </div>
+</body>
+</html>

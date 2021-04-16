@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(/images/books1.jpg);
+        }
+        h1{
+            text-align: left;
+            color: rgb(212, 233, 27);
+            font-family: Kristen ITC;
+            font-size: 52px;
+           
+        }
+
+        .container{
+            border: 1px solid rgb(200, 214, 241);
+            border-radius: 5px;
+            justify-content: center;
+            display: block;
+            border-radius: 8px;
+            padding:30px;
+            background-color:  rgb(200, 214, 241);
+            width: 500px;
+            height: 480px;
+            padding-left: auto;
+            padding-right: auto;
+            
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            display: block;
+            border-radius: 8px;
+            padding:25px;
+            background-color: rgba(100, 152, 161, 0.3);
+            width: 450px;
+            height: 200px;
+            font-family: Consolas;
+            font-size: 16px;
+            
+        }
+        #welcome{
+            text-align: center;
+            font-family:Freestyle Script;
+            font-size: 25px;
+            color: rgb(3, 3, 3);
+    
+}
+    </style>
+</head>
+<body>
+    <h1>Hey Lets Message!</h1>
+    <div class = "container">
+        <div id ="welcome">
+            <h2>Welcome to the site</h2>
+            <h3>the messaging site</h3>
+            <h4><u>make an account, login, post a message</u></h4>
+        </div>
+        <div id = "main">
+                <hr>
+                    <a href="/createUser">Create an account</a> | 
+                    <a href="/login">Login</a> | 
+                    <a href="/message">post a message</a> | 
+                    <a href="/logout">Logout</a> 
+                <hr>
+
+                <h2>Messages</h2>
+
+                <% for (let message of locals.messages) { %> 
+                    <div>
+                        <%= message.dataValues.content %> 
+                    </div>
+                <% } %>
+        </div>
+    </div>
+
+</body>
+</html>
